@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h3><em>Dice game</em></h3>
+<body>
+Roll the dice vs bot <br/>
+<form action="/dicegame" method="post">
+    Dicegame: <input type="dice" size="8" name="dice">
+    </b>
+    <input name="submit" type="submit" value="Roll"></b>
+</form>
+<p th:text="${dicegame}"></p>
+<a href="/result">Show Result</a>
+<a href="/dicegame">New game</a>
+</body>
+</html>

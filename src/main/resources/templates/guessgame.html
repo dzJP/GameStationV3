@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<h3><em>Guess Game</em></h3>
+<body>
+Guess the hidden number <br/>
+<form action="/guess" method="post">
+  Guess: <input type="guess" size="8" name="guess">
+  </b>
+  <input name="submit" type="submit" value="Guess"></b>
+</form>
+<p th:text="${guess}"></p>
+<a href="/result">Show Result</a>
+</body>
+</html>
